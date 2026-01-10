@@ -1,0 +1,108 @@
+/* Mobile First - Base styles are for mobile */
+
+/* Ensure adequate mobile padding */
+@media (max-width: 767px) {
+  .card {
+    padding: var(--spacing-lg);
+  }
+  
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .hero {
+    padding: var(--spacing-3xl) 0;
+    min-height: 500px;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-4xl);
+  }
+  
+  /* Improve button contrast on mobile */
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .form-actions .btn {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  
+  .btn-outline {
+    border-width: 2px;
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+  
+  h1 {
+    font-size: var(--font-size-6xl);
+  }
+  
+  .container {
+    padding: 0 var(--spacing-xl);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .hero {
+    padding: var(--spacing-3xl) 0;
+    min-height: 450px;
+  }
+  
+  .footer {
+    margin-top: var(--spacing-2xl);
+    padding: var(--spacing-2xl) 0 var(--spacing-xl);
+  }
+  
+  .card {
+    padding: var(--spacing-lg);
+  }
+  
+  .section-title {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .section-subtitle {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .hero-subtitle {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  /* Reduce large margins on desktop */
+  [style*="margin-top: var(--spacing-2xl)"],
+  [style*="margin-top: var(--spacing-3xl)"] {
+    margin-top: var(--spacing-xl) !important;
+  }
+  
+  [style*="margin-bottom: var(--spacing-2xl)"],
+  [style*="margin-bottom: var(--spacing-3xl)"] {
+    margin-bottom: var(--spacing-xl) !important;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}

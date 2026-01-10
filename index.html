@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W.E.S.T. Drilling Website Redesign by BytesByBlinken Media - View Design Options">
+    <title>W.E.S.T. Drilling - Website Design Options | BytesByBlinken Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a4d7a;
+            --secondary: #f97316;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+            --text: #374151;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 2rem 0;
+            margin-bottom: 4rem;
+        }
+
+        header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            text-align: center;
+            color: var(--text);
+            font-size: 1.125rem;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .option-card {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .option-header {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid;
+        }
+
+        .option-1 .option-header {
+            background: linear-gradient(135deg, #1a4d7a 0%, #2a6ba5 100%);
+            color: var(--white);
+            border-color: #f97316;
+        }
+
+        .option-2 .option-header {
+            background: linear-gradient(135deg, #212121 0%, #333333 100%);
+            color: var(--white);
+            border-color: #ff6f00;
+        }
+
+        .option-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .option-header .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        .option-preview {
+            height: 300px;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-1 .option-preview {
+            background: linear-gradient(135deg, #1a4d7a 0%, #0d9488 50%, #f97316 100%);
+        }
+
+        .option-2 .option-preview {
+            background: linear-gradient(135deg, #212121 0%, #424242 50%, #ff6f00 100%);
+        }
+
+        .preview-content {
+            text-align: center;
+            color: var(--white);
+            z-index: 1;
+        }
+
+        .preview-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .preview-content p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .option-body {
+            padding: 2rem;
+        }
+
+        .design-elements {
+            margin-bottom: 2rem;
+        }
+
+        .design-elements h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .option-2 .design-elements h3 {
+            color: #212121;
+        }
+
+        .element-list {
+            list-style: none;
+        }
+
+        .element-list li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .element-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .option-2 .element-list li:before {
+            color: #ff6f00;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .option-2 .btn {
+            background: #212121;
+        }
+
+        .option-2 .btn:hover {
+            background: #ff6f00;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .option-2 .btn-secondary {
+            border-color: #ff6f00;
+            color: #ff6f00;
+            background: transparent;
+        }
+
+        .option-2 .btn-secondary:hover {
+            background: #ff6f00;
+            color: var(--white);
+            border-color: #ff6f00;
+        }
+
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 2px solid var(--border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .option-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); letter-spacing: 2px; margin-bottom: 0.5rem;">
+                    BytesByBlinken Media
+                </div>
+                <div style="font-size: 0.875rem; color: var(--text); text-transform: uppercase; letter-spacing: 1px;">
+                    Web Design & Development
+                </div>
+            </div>
+            <h1>W.E.S.T. Drilling</h1>
+            <p>Website Redesign - Design Options</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="options-grid">
+                <!-- Option 1 -->
+                <div class="option-card option-1">
+                    <div class="option-header">
+                        <h2>Option 1</h2>
+                        <span class="badge">Modern & Professional</span>
+                    </div>
+                    <div class="option-preview">
+                        <div class="preview-content">
+                            <h3>Clean & Modern Design</h3>
+                            <p>Professional blue theme with smooth animations</p>
+                        </div>
+                    </div>
+                    <div class="option-body">
+                        <div class="design-elements">
+                            <h3>Design Elements</h3>
+                            <ul class="element-list">
+                                <li><strong>Color Palette:</strong> Professional blue (#1a4d7a) with orange accents (#f97316) and teal highlights</li>
+                                <li><strong>Typography:</strong> System font stack for clean, readable text</li>
+                                <li><strong>Layout:</strong> Centered, balanced layouts with generous whitespace</li>
+                                <li><strong>Cards:</strong> Rounded corners with gradient accent borders on hover</li>
+                                <li><strong>Animations:</strong> Animate on Scroll (AOS) with fade-up effects</li>
+                                <li><strong>Section Styling:</strong> Gradient accent lines under titles, hover effects on cards</li>
+                                <li><strong>Service Cards:</strong> Top border accents, icon animations on hover</li>
+                                <li><strong>Certification Badges:</strong> Gradient backgrounds with shine effects</li>
+                                <li><strong>Equipment Items:</strong> Left border accents, image zoom on hover</li>
+                                <li><strong>Overall Feel:</strong> Clean, modern, professional, approachable</li>
+                            </ul>
+                            <div class="color-palette">
+                                <div class="color-swatch" style="background: #1a4d7a;" title="Primary Blue"></div>
+                                <div class="color-swatch" style="background: #f97316;" title="Orange Accent"></div>
+                                <div class="color-swatch" style="background: #0d9488;" title="Teal Accent"></div>
+                                <div class="color-swatch" style="background: #f3f4f6;" title="Light Background"></div>
+                            </div>
+                        </div>
+                        <div class="cta-section">
+                            <a href="Option 1/index.html" class="btn" target="_blank">View Option 1</a>
+                            <a href="Option 1/index.html" class="btn btn-secondary" target="_blank">Explore Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option 2 -->
+                <div class="option-card option-2">
+                    <div class="option-header">
+                        <h2>Option 2</h2>
+                        <span class="badge">Industrial & Bold</span>
+                    </div>
+                    <div class="option-preview">
+                        <div class="preview-content">
+                            <h3>Bold Industrial Design</h3>
+                            <p>Dark theme with vibrant orange and cyan accents</p>
+                        </div>
+                    </div>
+                    <div class="option-body">
+                        <div class="design-elements">
+                            <h3>Design Elements</h3>
+                            <ul class="element-list">
+                                <li><strong>Color Palette:</strong> Dark charcoal (#212121) with vibrant orange (#ff6f00) and cyan (#00bcd4) accents</li>
+                                <li><strong>Typography:</strong> Montserrat/Inter font stack with bold, uppercase navigation</li>
+                                <li><strong>Layout:</strong> Left-aligned sections with sharp, geometric design</li>
+                                <li><strong>Cards:</strong> Sharp corners (no border-radius) with left border accents</li>
+                                <li><strong>Accordion Sections:</strong> FAQ-style expandable menus for equipment sections</li>
+                                <li><strong>Section Titles:</strong> Left-aligned with orange accent lines</li>
+                                <li><strong>Header/Footer:</strong> Dark backgrounds with high contrast white text</li>
+                                <li><strong>Buttons:</strong> Uppercase text, sharp corners, bold industrial feel</li>
+                                <li><strong>Whitespace:</strong> Optimized for desktop (1920x1080) with reduced padding</li>
+                                <li><strong>Overall Feel:</strong> Bold, industrial, modern, strong visual presence</li>
+                            </ul>
+                            <div class="color-palette">
+                                <div class="color-swatch" style="background: #212121;" title="Dark Charcoal"></div>
+                                <div class="color-swatch" style="background: #ff6f00;" title="Vibrant Orange"></div>
+                                <div class="color-swatch" style="background: #00bcd4;" title="Cyan Accent"></div>
+                                <div class="color-swatch" style="background: #f5f5f5;" title="Light Background"></div>
+                            </div>
+                        </div>
+                        <div class="cta-section">
+                            <a href="Option 2/index.html" class="btn" target="_blank">View Option 2</a>
+                            <a href="Option 2/index.html" class="btn btn-secondary" target="_blank">Explore Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <div style="font-size: 0.875rem; color: var(--text); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">
+                        Presented by BytesByBlinken Media
+                    </div>
+                    <h2 style="color: var(--primary); margin-bottom: 1rem;">Design Comparison</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.75rem;">Option 1 Highlights</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0;">✓ Smooth, professional animations</li>
+                            <li style="padding: 0.5rem 0;">✓ Centered, balanced layouts</li>
+                            <li style="padding: 0.5rem 0;">✓ Rounded, approachable design</li>
+                            <li style="padding: 0.5rem 0;">✓ Gradient accent elements</li>
+                            <li style="padding: 0.5rem 0;">✓ Enhanced hover effects</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #212121; margin-bottom: 0.75rem;">Option 2 Highlights</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0;">✓ Bold, industrial aesthetic</li>
+                            <li style="padding: 0.5rem 0;">✓ Sharp, geometric design</li>
+                            <li style="padding: 0.5rem 0;">✓ Accordion-style content sections</li>
+                            <li style="padding: 0.5rem 0;">✓ High contrast, strong presence</li>
+                            <li style="padding: 0.5rem 0;">✓ Optimized desktop spacing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 1rem;">
+                <div style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">BytesByBlinken Media</div>
+                <p style="opacity: 0.9; font-size: 0.9rem;">Professional Web Design & Development Services</p>
+            </div>
+            <p style="opacity: 0.8; font-size: 0.875rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                &copy; 2026 BytesByBlinken Media. W.E.S.T. Drilling Website Redesign - All design options are ready for review.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
