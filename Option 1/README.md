@@ -1,6 +1,6 @@
-# W.E.S.T. Drilling Website
+# WEST Drilling Website
 
-Modern, responsive website for W.E.S.T. Drilling - Geotechnical and Environmental Drilling Services.
+Modern, responsive website for WEST Drilling - Geotechnical and Environmental Drilling Services.
 
 ## Features
 
@@ -73,4 +73,4 @@ Font sizes and families can be adjusted in `css/variables.css`.
 
 ## License
 
-Copyright 2026 W.E.S.T. Drilling. All Rights Reserved.
+Copyright 2026 WEST Drilling. All Rights Reserved.

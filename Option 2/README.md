@@ -1,6 +1,6 @@
-# W.E.S.T. Drilling Website - Option 2
+# WEST Drilling Website - Option 2
 
-Modern, industrial design option for W.E.S.T. Drilling website.
+Modern, industrial design option for WEST Drilling website.
 
 ## Design Characteristics
 

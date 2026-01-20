@@ -1,29 +1,29 @@
 :root {
-  /* Colors - Industrial/Dark Theme */
-  --color-primary: #2c3e50;
-  --color-primary-dark: #1a252f;
-  --color-primary-light: #34495e;
-  --color-secondary: #e67e22;
-  --color-secondary-dark: #d35400;
-  --color-secondary-light: #f39c12;
-  --color-accent: #16a085;
-  --color-accent-dark: #138d75;
-  --color-accent-light: #1abc9c;
+  /* Colors - Minimalist Corporate Theme */
+  --color-primary: #000000;
+  --color-primary-dark: #000000;
+  --color-primary-light: #333333;
+  --color-secondary: #2563eb;
+  --color-secondary-dark: #1e40af;
+  --color-secondary-light: #3b82f6;
+  --color-accent: #2563eb;
+  --color-accent-dark: #1e40af;
+  --color-accent-light: #3b82f6;
   
   /* Neutral Colors */
-  --color-dark: #2c3e50;
-  --color-dark-light: #34495e;
-  --color-gray: #7f8c8d;
-  --color-gray-light: #95a5a6;
-  --color-gray-lighter: #bdc3c7;
-  --color-bg: #ecf0f1;
+  --color-dark: #000000;
+  --color-dark-light: #1a1a1a;
+  --color-gray: #666666;
+  --color-gray-light: #999999;
+  --color-gray-lighter: #cccccc;
+  --color-bg: #fafafa;
   --color-bg-light: #ffffff;
-  --color-bg-dark: #1a252f;
-  --color-border: #dfe6e9;
+  --color-bg-dark: #000000;
+  --color-border: #e5e5e5;
   
-  /* Typography */
-  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-family-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Typography - Classic Corporate */
+  --font-family-primary: 'Georgia', 'Times New Roman', serif;
+  --font-family-heading: 'Georgia', 'Times New Roman', serif;
   
   /* Font Sizes */
   --font-size-xs: 0.75rem;    /* 12px */
@@ -46,45 +46,45 @@
   --font-weight-extrabold: 800;
   
   /* Line Heights */
-  --line-height-tight: 1.2;
-  --line-height-normal: 1.5;
-  --line-height-relaxed: 1.6;
-  --line-height-loose: 1.8;
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  --line-height-loose: 2;
   
-  /* Spacing */
-  --spacing-xs: 0.25rem;   /* 4px */
-  --spacing-sm: 0.5rem;    /* 8px */
-  --spacing-md: 1rem;      /* 16px */
-  --spacing-lg: 1.5rem;    /* 24px */
-  --spacing-xl: 2rem;     /* 32px */
-  --spacing-2xl: 3rem;     /* 48px */
-  --spacing-3xl: 4rem;     /* 64px */
-  --spacing-4xl: 6rem;     /* 96px */
-  --spacing-5xl: 8rem;     /* 128px */
+  /* Spacing - Generous white space */
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 1rem;     /* 16px */
+  --spacing-md: 1.5rem;   /* 24px */
+  --spacing-lg: 2.5rem;   /* 40px */
+  --spacing-xl: 4rem;     /* 64px */
+  --spacing-2xl: 6rem;    /* 96px */
+  --spacing-3xl: 8rem;    /* 128px */
+  --spacing-4xl: 10rem;   /* 160px */
+  --spacing-5xl: 12rem;   /* 192px */
   
-  /* Border Radius */
+  /* Border Radius - Minimal/None */
   --radius-none: 0;
-  --radius-sm: 0.25rem;   /* 4px */
-  --radius-md: 0.5rem;    /* 8px */
-  --radius-lg: 0.75rem;    /* 12px */
-  --radius-xl: 1rem;      /* 16px */
-  --radius-2xl: 1.5rem;   /* 24px */
-  --radius-full: 9999px;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-full: 0;
   
-  /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
-  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.2);
+  /* Shadows - Minimal */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xl: none;
   
-  /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Transitions - Subtle */
+  --transition-fast: 200ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 400ms ease;
   
   /* Layout */
-  --container-max-width: 1280px;
-  --header-height: 90px;
-  --header-height-mobile: 70px;
+  --container-max-width: 1000px;
+  --header-height: 100px;
+  --header-height-mobile: 80px;
 }

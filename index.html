@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="W.E.S.T. Drilling Website Redesign by BytesByBlinken Media - View Design Options">
-    <title>W.E.S.T. Drilling - Website Design Options | BytesByBlinken Media</title>
+    <meta name="description" content="WEST Drilling Website Redesign by BytesByBlinken Media - View Design Options">
+    <title>WEST Drilling - Website Design Options | BytesByBlinken Media</title>
     <style>
         * {
             margin: 0;
@@ -57,7 +57,7 @@
 
         .options-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 3rem;
             margin-bottom: 4rem;
         }
@@ -88,9 +88,9 @@
         }
 
         .option-2 .option-header {
-            background: linear-gradient(135deg, #212121 0%, #333333 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: var(--white);
-            border-color: #ff6f00;
+            border-color: #2563eb;
         }
 
         .option-header h2 {
@@ -122,7 +122,7 @@
         }
 
         .option-2 .option-preview {
-            background: linear-gradient(135deg, #212121 0%, #424242 50%, #ff6f00 100%);
+            background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #2563eb 100%);
         }
 
         .preview-content {
@@ -158,7 +158,98 @@
         }
 
         .option-2 .design-elements h3 {
-            color: #212121;
+            color: #000000;
+        }
+
+        .option-3 .option-header {
+            background: linear-gradient(135deg, #3E5F44 0%, #5E936C 50%, #93DA97 100%);
+            color: var(--white);
+            border-color: #E8FFD7;
+        }
+
+        .option-3 .option-preview {
+            background: linear-gradient(135deg, #3E5F44 0%, #5E936C 30%, #93DA97 60%, #E8FFD7 100%);
+        }
+
+        .option-3 .element-list li:before {
+            color: #5E936C;
+        }
+
+        .option-3 .btn {
+            background: linear-gradient(135deg, #3E5F44 0%, #5E936C 100%);
+            position: relative;
+            overflow: visible;
+        }
+
+        .option-3 .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 30%, transparent 70%);
+            transform: translate(-50%, -50%);
+            transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .option-3 .btn:hover::before {
+            width: 300px;
+            height: 300px;
+            opacity: 1;
+        }
+
+        .option-3 .btn:hover {
+            background: linear-gradient(135deg, #5E936C 0%, #93DA97 100%);
+            transform: translateY(-2px);
+        }
+
+        .option-3 .btn-secondary {
+            border-color: #93DA97;
+            color: #5E936C;
+            background: transparent;
+            position: relative;
+            overflow: visible;
+        }
+
+        .option-3 .btn-secondary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 30%, transparent 70%);
+            transform: translate(-50%, -50%);
+            transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .option-3 .btn-secondary:hover::before {
+            width: 300px;
+            height: 300px;
+            opacity: 1;
+        }
+
+        .option-3 .btn-secondary:hover {
+            background: linear-gradient(135deg, #93DA97 0%, #5E936C 100%);
+            color: var(--white);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+
+        .option-3 .design-elements h3 {
+            background: linear-gradient(135deg, #3E5F44 0%, #5E936C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .element-list {
@@ -180,7 +271,7 @@
         }
 
         .option-2 .element-list li:before {
-            color: #ff6f00;
+            color: #2563eb;
         }
 
         .cta-section {
@@ -208,11 +299,11 @@
         }
 
         .option-2 .btn {
-            background: #212121;
+            background: #000000;
         }
 
         .option-2 .btn:hover {
-            background: #ff6f00;
+            background: #2563eb;
         }
 
         .btn-secondary {
@@ -222,15 +313,15 @@
         }
 
         .option-2 .btn-secondary {
-            border-color: #ff6f00;
-            color: #ff6f00;
+            border-color: #2563eb;
+            color: #2563eb;
             background: transparent;
         }
 
         .option-2 .btn-secondary:hover {
-            background: #ff6f00;
+            background: #2563eb;
             color: var(--white);
-            border-color: #ff6f00;
+            border-color: #2563eb;
         }
 
         footer {
@@ -282,7 +373,7 @@
                     Web Design & Development
                 </div>
             </div>
-            <h1>W.E.S.T. Drilling</h1>
+            <h1>WEST Drilling</h1>
             <p>Website Redesign - Design Options</p>
         </div>
     </header>
@@ -335,39 +426,80 @@
                 <div class="option-card option-2">
                     <div class="option-header">
                         <h2>Option 2</h2>
-                        <span class="badge">Industrial & Bold</span>
+                        <span class="badge">Minimalist & Corporate</span>
                     </div>
                     <div class="option-preview">
                         <div class="preview-content">
-                            <h3>Bold Industrial Design</h3>
-                            <p>Dark theme with vibrant orange and cyan accents</p>
+                            <h3>Clean Minimalist Design</h3>
+                            <p>White-space heavy layout with classic typography</p>
                         </div>
                     </div>
                     <div class="option-body">
                         <div class="design-elements">
                             <h3>Design Elements</h3>
                             <ul class="element-list">
-                                <li><strong>Color Palette:</strong> Dark charcoal (#212121) with vibrant orange (#ff6f00) and cyan (#00bcd4) accents</li>
-                                <li><strong>Typography:</strong> Montserrat/Inter font stack with bold, uppercase navigation</li>
-                                <li><strong>Layout:</strong> Left-aligned sections with sharp, geometric design</li>
-                                <li><strong>Cards:</strong> Sharp corners (no border-radius) with left border accents</li>
-                                <li><strong>Accordion Sections:</strong> FAQ-style expandable menus for equipment sections</li>
-                                <li><strong>Section Titles:</strong> Left-aligned with orange accent lines</li>
-                                <li><strong>Header/Footer:</strong> Dark backgrounds with high contrast white text</li>
-                                <li><strong>Buttons:</strong> Uppercase text, sharp corners, bold industrial feel</li>
-                                <li><strong>Whitespace:</strong> Optimized for desktop (1920x1080) with reduced padding</li>
-                                <li><strong>Overall Feel:</strong> Bold, industrial, modern, strong visual presence</li>
+                                <li><strong>Color Palette:</strong> Black (#000000) and white with minimal blue accent (#2563eb)</li>
+                                <li><strong>Typography:</strong> Classic serif fonts (Georgia) for traditional corporate feel</li>
+                                <li><strong>Layout:</strong> Generous white space, centered content, clean lines</li>
+                                <li><strong>Cards:</strong> Simple borders, no shadows, minimal styling</li>
+                                <li><strong>Design Philosophy:</strong> Less is more - minimal visual elements</li>
+                                <li><strong>Section Titles:</strong> Simple underlines, no decorative elements</li>
+                                <li><strong>Header/Footer:</strong> Clean white backgrounds with subtle borders</li>
+                                <li><strong>Buttons:</strong> Simple borders, no shadows, understated elegance</li>
+                                <li><strong>Whitespace:</strong> Extensive padding and margins for breathing room</li>
+                                <li><strong>Overall Feel:</strong> Clean, minimalist, corporate, timeless elegance</li>
                             </ul>
                             <div class="color-palette">
-                                <div class="color-swatch" style="background: #212121;" title="Dark Charcoal"></div>
-                                <div class="color-swatch" style="background: #ff6f00;" title="Vibrant Orange"></div>
-                                <div class="color-swatch" style="background: #00bcd4;" title="Cyan Accent"></div>
-                                <div class="color-swatch" style="background: #f5f5f5;" title="Light Background"></div>
+                                <div class="color-swatch" style="background: #000000;" title="Black"></div>
+                                <div class="color-swatch" style="background: #2563eb;" title="Blue Accent"></div>
+                                <div class="color-swatch" style="background: #ffffff; border: 1px solid #ccc;" title="White"></div>
+                                <div class="color-swatch" style="background: #fafafa;" title="Light Background"></div>
                             </div>
                         </div>
                         <div class="cta-section">
                             <a href="Option 2/index.html" class="btn" target="_blank">View Option 2</a>
                             <a href="Option 2/index.html" class="btn btn-secondary" target="_blank">Explore Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option 3 -->
+                <div class="option-card option-3">
+                    <div class="option-header">
+                        <h2>Option 3</h2>
+                        <span class="badge">Natural & Fresh</span>
+                    </div>
+                    <div class="option-preview">
+                        <div class="preview-content">
+                            <h3>Natural Green Design</h3>
+                            <p>Fresh green palette with light, professional styling</p>
+                        </div>
+                    </div>
+                    <div class="option-body">
+                        <div class="design-elements">
+                            <h3>Design Elements</h3>
+                            <ul class="element-list">
+                                <li><strong>Color Palette:</strong> Natural green theme (#3E5F44, #5E936C, #93DA97, #E8FFD7) - fresh, professional</li>
+                                <li><strong>Typography:</strong> Modern Poppins/Inter font stack with gradient text effects</li>
+                                <li><strong>Layout:</strong> Dynamic layouts with colorful gradients and animations</li>
+                                <li><strong>Cards:</strong> Rounded corners with gradient borders and hover effects</li>
+                                <li><strong>Gradients:</strong> Multi-color gradients throughout (purple → pink → green)</li>
+                                <li><strong>Section Titles:</strong> Gradient accent lines and colorful underlines</li>
+                                <li><strong>Header/Footer:</strong> Gradient borders and colorful accents</li>
+                                <li><strong>Buttons:</strong> Gradient backgrounds with circular glow hover effects</li>
+                                <li><strong>Visual Effects:</strong> Colorful shadows, gradient text, animated elements</li>
+                                <li><strong>Overall Feel:</strong> Fresh, natural, professional with calming green tones and light backgrounds</li>
+                            </ul>
+                            <div class="color-palette">
+                                <div class="color-swatch" style="background: #3E5F44;" title="Dark Green"></div>
+                                <div class="color-swatch" style="background: #5E936C;" title="Medium Green"></div>
+                                <div class="color-swatch" style="background: #93DA97;" title="Light Green"></div>
+                                <div class="color-swatch" style="background: #E8FFD7;" title="Cream Green"></div>
+                            </div>
+                        </div>
+                        <div class="cta-section">
+                            <a href="Option 3/index.html" class="btn" target="_blank">View Option 3</a>
+                            <a href="Option 3/index.html" class="btn btn-secondary" target="_blank">Explore Site</a>
                         </div>
                     </div>
                 </div>
@@ -380,7 +512,7 @@
                     </div>
                     <h2 style="color: var(--primary); margin-bottom: 1rem;">Design Comparison</h2>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
                     <div>
                         <h3 style="color: var(--primary); margin-bottom: 0.75rem;">Option 1 Highlights</h3>
                         <ul style="list-style: none; padding-left: 0;">
@@ -392,13 +524,23 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 style="color: #212121; margin-bottom: 0.75rem;">Option 2 Highlights</h3>
+                        <h3 style="color: #000000; margin-bottom: 0.75rem;">Option 2 Highlights</h3>
                         <ul style="list-style: none; padding-left: 0;">
-                            <li style="padding: 0.5rem 0;">✓ Bold, industrial aesthetic</li>
-                            <li style="padding: 0.5rem 0;">✓ Sharp, geometric design</li>
-                            <li style="padding: 0.5rem 0;">✓ Accordion-style content sections</li>
-                            <li style="padding: 0.5rem 0;">✓ High contrast, strong presence</li>
-                            <li style="padding: 0.5rem 0;">✓ Optimized desktop spacing</li>
+                            <li style="padding: 0.5rem 0;">✓ Minimalist, clean aesthetic</li>
+                            <li style="padding: 0.5rem 0;">✓ Classic serif typography</li>
+                            <li style="padding: 0.5rem 0;">✓ Generous white space</li>
+                            <li style="padding: 0.5rem 0;">✓ Timeless corporate elegance</li>
+                            <li style="padding: 0.5rem 0;">✓ Simple, understated design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="background: linear-gradient(135deg, #3E5F44 0%, #5E936C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem;">Option 3 Highlights</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0;">✓ Fresh, natural green palette</li>
+                            <li style="padding: 0.5rem 0;">✓ Light, airy backgrounds</li>
+                            <li style="padding: 0.5rem 0;">✓ Professional gradients</li>
+                            <li style="padding: 0.5rem 0;">✓ Calming, approachable feel</li>
+                            <li style="padding: 0.5rem 0;">✓ Perfect for drilling industry</li>
                         </ul>
                     </div>
                 </div>
@@ -413,7 +555,7 @@
                 <p style="opacity: 0.9; font-size: 0.9rem;">Professional Web Design & Development Services</p>
             </div>
             <p style="opacity: 0.8; font-size: 0.875rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
-                &copy; 2026 BytesByBlinken Media. W.E.S.T. Drilling Website Redesign - All design options are ready for review.
+                &copy; 2026 BytesByBlinken Media. WEST Drilling Website Redesign - All design options are ready for review.
             </p>
         </div>
     </footer>

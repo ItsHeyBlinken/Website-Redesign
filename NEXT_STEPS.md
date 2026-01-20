@@ -1,4 +1,4 @@
-# Next Steps - W.E.S.T. Drilling Website Redesign
+# Next Steps - WEST Drilling Website Redesign
 
 ## Status
 - ✅ Design options created (Option 1 & Option 2)

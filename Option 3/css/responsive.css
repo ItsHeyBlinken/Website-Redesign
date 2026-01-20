@@ -1,0 +1,50 @@
+/* Mobile First - Base styles are for mobile */
+
+/* Ensure adequate mobile padding */
+@media (max-width: 767px) {
+  .card {
+    padding: var(--spacing-lg);
+  }
+  
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .hero {
+    padding: var(--spacing-3xl) 0;
+    min-height: 400px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+  
+  h1 {
+    font-size: var(--font-size-5xl);
+  }
+  
+  .container {
+    padding: 0 var(--spacing-xl);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .section {
+    padding: var(--spacing-4xl) 0;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
